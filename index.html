@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./styles/style.css">
@@ -10,6 +12,7 @@
   <title>Frontend Mentor | E-commerce product page</title>
 
 </head>
+
 <body>
   <header>
     <div class="navigation-container">
@@ -22,7 +25,7 @@
         <a href="">Contact</a>
       </nav>
     </div>
-    
+
     <ul>
       <li class="cart"><img src="./images/icon-cart.svg" alt="shopping cart"></li>
       <li class="avatar"><img src="./images/image-avatar.png" alt="profile avatar image"></li>
@@ -30,25 +33,50 @@
   </header>
 
   <main class="container">
-    Sneaker Company
-
-  Fall Limited Edition Sneakers
-
-  These low-profile sneakers are your perfect casual wear companion. Featuring a 
-  durable rubber outer sole, they’ll withstand everything the weather can offer.
-
-  $125.00
-  50%
-  $250.00
-
-  0
-  Add to cart
+    <div class="product">
+      <div class="product-img">
+        <img src="./images/image-product-1.jpg" alt="">
+      </div>
+      <div class="product-next-imgs">
+        <img src="./images/image-product-1-thumbnail.jpg" alt="">
+        <img src="./images/image-product-2-thumbnail.jpg" alt="">
+        <img src="./images/image-product-3-thumbnail.jpg" alt="">
+        <img src="./images/image-product-4-thumbnail.jpg" alt="">
+      </div>
+    </div>
+    <div class="product-info">
+      <h2 class="product-company">
+        Sneaker Company
+      </h2>
+      <h3 class="product-name">
+        Fall Limited Edition Sneakers
+      </h3>
+      <p class="product-description">
+        These low-profile sneakers are your perfect casual wear companion. Featuring a
+        durable rubber outer sole, they’ll withstand everything the weather can offer.
+      </p>
+      <h4 class="price">
+        $125.00
+      </h4>
+      <span class="discount">50%</span>
+      <p class="old-price">$250.00</p>
+      <div class="quantity">
+        <div class="quantity-input">
+          <span>-</span>
+          <p>0</p>
+          <span>+</span>
+        </div>
+        <button>Add to cart</button>
+      </div>
+    </div>
   </main>
 
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://renaldas0.github.io/Renaldas-Bendikas_portfolio/" target="_blank">Renaldas Bendikas</a>.
-    <a href="https://github.com/Renaldas0" target="_blank"><span class="icon"><i class="fa-brands fa-github"></i></span></a>
+    <a href="https://github.com/Renaldas0" target="_blank"><span class="icon"><i
+          class="fa-brands fa-github"></i></span></a>
   </div>
 </body>
+
 </html>
