@@ -38,10 +38,11 @@
         <img src="./images/image-product-1.jpg" alt="">
       </div>
       <div class="product-next-imgs">
-        <img src="./images/image-product-1-thumbnail.jpg" alt="">
-        <img src="./images/image-product-2-thumbnail.jpg" alt="">
-        <img src="./images/image-product-3-thumbnail.jpg" alt="">
-        <img src="./images/image-product-4-thumbnail.jpg" alt="">
+        <div class="next-img active"><img src="./images/image-product-1-thumbnail.jpg" class="product-thumbnail" alt="">
+        </div>
+        <div class="next-img"><img src="./images/image-product-2-thumbnail.jpg" class="product-thumbnail" alt=""></div>
+        <div class="next-img"><img src="./images/image-product-3-thumbnail.jpg" class="product-thumbnail" alt=""></div>
+        <div class="next-img"><img src="./images/image-product-4-thumbnail.jpg" class="product-thumbnail" alt=""></div>
       </div>
     </div>
     <div class="product-info">
@@ -60,14 +61,14 @@
           $125.00
         </p>
         <span class="discount">50%</span>
-        </div>
-      
+      </div>
+
       <p class="old-price">$250.00</p>
       <div class="quantity">
         <div class="quantity-input">
-          <span class="operator"><img src="./images/icon-minus.svg" alt="subtract quantity by 1"></span>
+          <span class="operator" id="decrement"><img src="./images/icon-minus.svg" alt="subtract quantity by 1"></span>
           <p>0</p>
-          <span class="operator"><img src="./images/icon-plus.svg" alt="increase quantity by 1"></span>
+          <span class="operator" id="increment"><img src="./images/icon-plus.svg" alt="increase quantity by 1"></span>
         </div>
         <button><span><img src="./images/icon-cart.svg" alt=""></span>Add to cart</button>
       </div>
