@@ -78,6 +78,7 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position: relative;
 }
 
 .product {
@@ -210,22 +211,77 @@ main {
     cursor: pointer;
 }
 
-.quantity button {
+.btn {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 68%;
     font-size: 1em;
     height: 50px;
     padding: 3px;
     background-color: var(--orange);
     color: var(--White);
     border-radius: 10px;
-    margin-left: 20px;
     font-weight: bold;
     cursor: pointer;
 }
 
+.quantity button {
+    width: 68%;
+    margin-left: 20px;
+}
+
 .quantity button span {
     padding-right: 30px;
+}
+
+.basket-summary {
+    position: absolute;
+    background-color: var(--White);
+    box-shadow: -1px 8px 16px 0px rgba(0, 0, 0, 0.6);
+    right: 125px;
+    top: 99px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-heading {
+    line-height: 50px;
+    padding: 2px 0 3px 5%;
+    border-bottom: 1px solid var(--Grayish-blue);
+}
+
+.item-desc {
+    display: flex;
+    width: 90%;
+    margin: 20px auto 0 auto;
+}
+
+.summary-img {
+    width: 15%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.summary-img img {
+    width: 100%;
+    border-radius: .6em;
+}
+
+.summary-writeup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+}
+
+.bin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkout-btn {
+    width: 90%;
+    margin: 15px auto 20px auto;
 }
