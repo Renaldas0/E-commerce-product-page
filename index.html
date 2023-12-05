@@ -14,6 +14,9 @@
 </head>
 
 <body>
+  <div class="main-container overlay">
+
+  
   <header>
     <div class="navigation-container">
       <img src="./images/logo.svg" alt="">
@@ -74,7 +77,7 @@
       </div>
     </div>
   </main>
-  <div class="basket-summary">
+  <div class="basket-summary" id="hidden">
     <div class="cart-heading">
       <h4>Cart</h4>
     </div>
@@ -92,6 +95,21 @@
       <button class="btn checkout-btn">Checkout</button>
     </div>
   </div>
+  <div class="image-modal">
+    <div class="close-btn-container">
+      <img class="close-btn" src="./images/icon-close.svg" alt="">
+    </div>
+    <div class="main-img">
+      <img src="./images/image-product-1.jpg" alt="">
+    </div>
+    
+    <div class="modal-next-images">
+      <div><img src="./images/image-product-1-thumbnail.jpg" alt=""></div>
+      <div><img src="./images/image-product-2-thumbnail.jpg" alt=""></div>
+      <div><img src="./images/image-product-3-thumbnail.jpg" alt=""></div>
+      <div><img src="./images/image-product-4-thumbnail.jpg" alt=""></div>
+    </div>
+  </div>
 
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
@@ -99,6 +117,7 @@
     <a href="https://github.com/Renaldas0" target="_blank"><span class="icon"><i
           class="fa-brands fa-github"></i></span></a>
   </div> -->
+  </div>
 </body>
 
 </html>
