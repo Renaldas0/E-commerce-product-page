@@ -114,6 +114,16 @@ ul li {
 .avatar {
     height: 50px;
     width: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.avatar img {
+    width: 100%;
+}
+
+.avatar:hover {
+    border: 2px solid var(--orange);
 }
 
 main {
@@ -351,4 +361,8 @@ main {
 .checkout-btn {
     width: 90%;
     margin: 15px auto 20px auto;
+}
+
+.add-btn:hover {
+    background-color: var(--pale-orange);
 }
