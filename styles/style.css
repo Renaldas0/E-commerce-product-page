@@ -24,9 +24,28 @@
 
 body {
     font-family: 'Kumbh Sans', sans-serif;
+
+}
+
+.main-container {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: var(--White);
+    z-index: 0;
+}
+
+.overlay:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
 
 .container {
@@ -42,6 +61,10 @@ header {
     border-bottom: 1px solid var(--Grayish-blue);
 }
 
+.menu-icon {
+    margin: 0 15px 0 25px;
+}
+
 .navigation-container img,
 .navigation-container nav {
     display: inline-block;
@@ -55,6 +78,26 @@ header {
 .navigation-container nav a {
     margin: 0 25px;
     color: var(--Dark-grayish-blue);
+    display: inline-block;
+    position: relative;
+}
+
+.navigation-container nav a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: -38px;
+    left: 0;
+    background-color: var(--orange);
+    transform-origin: bottom center;
+    transition: transform 0.2s ease;
+}
+
+.navigation-container nav a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom center;
 }
 
 ul {
@@ -71,17 +114,6 @@ ul li {
 .avatar {
     height: 50px;
     width: 50px;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-.avatar img {
-    height: 100%;
-    width: 100%;
-}
-
-.avatar:hover {
-    border: 2px solid var(--orange);
 }
 
 main {
@@ -234,6 +266,7 @@ main {
     border-radius: 10px;
     font-weight: bold;
     cursor: pointer;
+    transition: .2s ease;
 }
 
 .quantity button {
@@ -250,12 +283,16 @@ main {
     background-color: var(--White);
     border-radius: .5em;
     box-shadow: -1px 8px 16px 0px rgba(0, 0, 0, 0.6);
-    right: 125px;
-    top: 99px;
+    right: 140px;
+    top: 90px;
     width: 400px;
-    height: 220px;
     display: flex;
     flex-direction: column;
+    border-radius: .5em;
+}
+
+.basket-summary.visible {
+    display: flex;
 }
 
 .cart-heading {
@@ -296,6 +333,15 @@ main {
     width: 80%;
 }
 
+.summary-writeup p {
+    padding: 2px;
+    color: var(--Dark-grayish-blue);
+}
+
+.summary-writeup p b {
+    color: var(--Black);
+}
+
 .bin {
     display: flex;
     align-items: center;
@@ -305,8 +351,4 @@ main {
 .checkout-btn {
     width: 90%;
     margin: 15px auto 20px auto;
-}
-
-.add-btn:hover {
-    background-color: var(--pale-orange);
 }

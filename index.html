@@ -14,65 +14,100 @@
 </head>
 
 <body>
-  <header>
-    <div class="navigation-container">
-      <img src="./images/logo.svg" alt="">
-      <nav>
-        <a href="">Collections</a>
-        <a href="">Men</a>
-        <a href="">Women</a>
-        <a href="">About</a>
-        <a href="">Contact</a>
-      </nav>
-    </div>
+  <div class="main-container">
+    <header>
 
-    <ul>
-      <li class="cart"><img src="./images/icon-cart.svg" alt="shopping cart"></li>
-      <li class="avatar"><img src="./images/image-avatar.png" alt="profile avatar image"></li>
-    </ul>
-  </header>
+      <!-- <div class="sidebar">
+        <img src="./images/icon-close.svg" alt="">
+        <nav>
+          <a href="">Collections</a>
+          <a href="">Men</a>
+          <a href="">Women</a>
+          <a href="">About</a>
+          <a href="">Contact</a>
+        </nav>
+      </div> -->
 
-  <main class="container">
-    <div class="product">
-      <div class="product-img">
-        <img src="./images/image-product-1.jpg" alt="">
+
+      <div class="navigation-container">
+        <img class="menu-icon" src="./images/icon-menu.svg" alt="">
+        <img src="./images/logo.svg" alt="">
+        <nav>
+          <a href="">Collections</a>
+          <a href="">Men</a>
+          <a href="">Women</a>
+          <a href="">About</a>
+          <a href="">Contact</a>
+        </nav>
       </div>
-      <div class="product-next-imgs">
-        <div class="next-img active"><img src="./images/image-product-1-thumbnail.jpg" class="product-thumbnail" alt="">
+
+      <ul>
+        <li class="cart"><img src="./images/icon-cart.svg" alt="shopping cart"></li>
+        <li class="avatar"><img src="./images/image-avatar.png" alt="profile avatar image"></li>
+      </ul>
+    </header>
+
+    <main class="container">
+      <div class="product">
+        <div class="product-img">
+          <img src="./images/image-product-1.jpg" alt="">
         </div>
-        <div class="next-img"><img src="./images/image-product-2-thumbnail.jpg" class="product-thumbnail" alt=""></div>
-        <div class="next-img"><img src="./images/image-product-3-thumbnail.jpg" class="product-thumbnail" alt=""></div>
-        <div class="next-img"><img src="./images/image-product-4-thumbnail.jpg" class="product-thumbnail" alt=""></div>
+        <div class="product-next-imgs">
+          <div class="next-img active"><img src="./images/image-product-1-thumbnail.jpg" class="product-thumbnail" alt="">
+          </div>
+          <div class="next-img"><img src="./images/image-product-2-thumbnail.jpg" class="product-thumbnail" alt=""></div>
+          <div class="next-img"><img src="./images/image-product-3-thumbnail.jpg" class="product-thumbnail" alt=""></div>
+          <div class="next-img"><img src="./images/image-product-4-thumbnail.jpg" class="product-thumbnail" alt=""></div>
+        </div>
       </div>
-    </div>
-    <div class="product-info">
-      <h2 class="product-company">
-        Sneaker Company
-      </h2>
-      <h3 class="product-name">
-        Fall Limited Edition Sneakers
-      </h3>
-      <p class="product-description">
-        These low-profile sneakers are your perfect casual wear companion. Featuring a
-        durable rubber outer sole, they’ll withstand everything the weather can offer.
-      </p>
-      <div class="price">
-        <p>
-          $125.00
+      <div class="product-info">
+        <h2 class="product-company">
+          Sneaker Company
+        </h2>
+        <h3 class="product-name">
+          Fall Limited Edition Sneakers
+        </h3>
+        <p class="product-description">
+          These low-profile sneakers are your perfect casual wear companion. Featuring a
+          durable rubber outer sole, they’ll withstand everything the weather can offer.
         </p>
-        <span class="discount">50%</span>
-      </div>
-
-      <p class="old-price">$250.00</p>
-      <div class="quantity">
-        <div class="quantity-input">
-          <span class="operator" id="decrement"><img src="./images/icon-minus.svg" alt="subtract quantity by 1"></span>
-          <p>0</p>
-          <span class="operator" id="increment"><img src="./images/icon-plus.svg" alt="increase quantity by 1"></span>
+        <div class="price">
+          <p>
+            $125.00
+          </p>
+          <span class="discount">50%</span>
         </div>
-        <button class="btn add-btn"><span><img src="./images/icon-cart.svg" alt=""></span>Add to cart</button>
+
+        <p class="old-price">$250.00</p>
+        <div class="quantity">
+          <div class="quantity-input">
+            <span class="operator" id="decrement"><img src="./images/icon-minus.svg" alt="subtract quantity by 1"></span>
+            <p class="item-quantity"></p>
+            <span class="operator" id="increment"><img src="./images/icon-plus.svg" alt="increase quantity by 1"></span>
+          </div>
+          <button class="btn add-btn"><span><img src="./images/icon-cart.svg" alt=""></span>Add to cart</button>
+        </div>
+      </div>
+    </main>
+    <div class="basket-summary">
+      <div class="cart-heading">
+        <h4>Cart</h4>
+      </div>
+      <div>
+        <div class="item-desc">
+          <div class="summary-img">
+            <img src="./images/image-product-1-thumbnail.jpg" alt="">
+          </div>
+          <div class="summary-writeup">
+            <p>Fall Limited Edition Sneakers</p>
+            <p>$125.00 x 3 <b>$375.00</b></p>
+          </div>
+          <div class="bin"><img src="./images/icon-delete.svg" alt=""></div>
+        </div>
+        <button class="btn checkout-btn">Checkout</button>
       </div>
     </div>
+<<<<<<< HEAD
   </main>
 
   <!-- <div class="basket-summary">
@@ -102,6 +137,8 @@
       <button class="btn checkout-btn">Checkout</button>
     </div>
   </div> -->
+=======
+>>>>>>> cd9927a46ca2e7f8c3c3209b2bef60ab8cc1cec8
 
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
@@ -109,6 +146,23 @@
     <a href="https://github.com/Renaldas0" target="_blank"><span class="icon"><i
           class="fa-brands fa-github"></i></span></a>
   </div> -->
+  </div>
+  <div class="image-modal">
+    <div class="close-btn-container">
+      <img class="close-btn" src="./images/icon-close.svg" alt="close button">
+    </div>
+    <div class="main-img">
+      <img src="./images/image-product-1.jpg" alt="">
+    </div>
+    
+    <div class="modal-next-images">
+      <div><img src="./images/image-product-1-thumbnail.jpg" alt=""></div>
+      <div><img src="./images/image-product-2-thumbnail.jpg" alt=""></div>
+      <div><img src="./images/image-product-3-thumbnail.jpg" alt=""></div>
+      <div><img src="./images/image-product-4-thumbnail.jpg" alt=""></div>
+    </div>
+  </div>
+  <script src="./script.js"></script>
 </body>
 
 </html>
